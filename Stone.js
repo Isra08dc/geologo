@@ -1,10 +1,10 @@
-class Rubber{
+class Stone{
 	constructor(x,y,r)
 	{
 	var options={
-	restitution:0.3,
-	friction: 5,
-	density: 1
+    restitution:0.8,
+	friction: 0.9,
+	density: 12
 	}
 		this.x=x;
 		this.y=y;
@@ -15,14 +15,14 @@ class Rubber{
 	}
 	display()
 	{
-			var rubberpos=this.body.position;		
+			var stonepos=this.body.position;		
 			push()
-			translate(rubberpos.x, rubberpos.y);
+			translate(stonepos.x, stonepos.y);
 			rectMode(CENTER)
 			strokeWeight(4);
 			stroke("black");
 			fill("darkblue");
-			//draw the ellipse here to display the rubber ball
+			
 
 			pop()
 	}
