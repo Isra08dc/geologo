@@ -12,9 +12,9 @@ function setup(){
     world = engine.world;
 
     plane = new Plane(600,height,1200,20)
-    hammer = new Hammer(10,100);
-    iron = new Iron(10,100);
-    stone = new Stone(10,100);
+    hammer = new Hammer(10,180);
+    iron = new Iron(10,150);
+    stone = new Stone(10,70);
     rubber = new Rubber(10,100);
 
 }
