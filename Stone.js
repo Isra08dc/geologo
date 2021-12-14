@@ -1,5 +1,5 @@
 class Stone{
-	constructor(x,y,r)
+	constructor(x, y, width, height)
 	{
 	var options={
     restitution:0.8,
@@ -9,7 +9,7 @@ class Stone{
 		this.x=x;
 		this.y=y;
 		this.r=r
-		this.body=Bodies.circle(this.x, this.y, (this.r-20)/2, options)
+		this.body=Bodies.rectangle(this.x, this.y, (this.r-20)/2, options)
 		World.add(world, this.body);
 
 	}
