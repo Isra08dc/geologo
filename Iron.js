@@ -1,5 +1,5 @@
 class Iron{
-	constructor(x,y,r)
+	constructor(x,y,y)
 	{
 	var options={
 	'restitution':0.8,
@@ -13,8 +13,6 @@ class Iron{
   };
   display(){
     var pos = this.body.position;
-    pos.x = mouseX;
-    pos.y = mouseY;
     var angle = this.body.angle;
 
     push();
