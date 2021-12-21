@@ -6,10 +6,10 @@ class Stone{
 	friction: 0.9,
 	density: 12
 	}
-		this.x=x;
-		this.y=y;
-		this.r=r
-		this.body=Bodies.rectangle(this.x, this.y, (this.r-20)/2, options)
+		
+		this.body=Bodies.rectangle(x, y, width, height,options)
+		this.width=width;
+		this.height=height;
 		World.add(world, this.body);
 
 	}
@@ -21,7 +21,8 @@ class Stone{
 			rectMode(CENTER)
 			strokeWeight(4);
 			stroke("black");
-			fill("darkblue");
+			fill("aqua");
+			rect(0,0,this.width,this.height);
 			
 
 			pop()

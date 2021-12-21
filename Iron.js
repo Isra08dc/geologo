@@ -1,5 +1,5 @@
 class Iron{
-	constructor(x,y,y)
+	constructor(x,y)
 	{
 	var options={
 	'restitution':0.8,
@@ -20,7 +20,7 @@ class Iron{
     rotate(angle);
     strokeWeight(3);
     stroke('white')
-    fill('orange')
+    fill('red')
     rectMode(CENTER)
     rect(0, 0, this.width, this.height);
     pop();

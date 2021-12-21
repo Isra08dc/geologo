@@ -23,8 +23,7 @@ class Rubber{
 			stroke("black");
 			fill("darkblue");
 			//draw the ellipse here to display the rubber ball
-			ellipse(x,y,60,60);
-			this.body=Bodies.circle(this.x, this.y, (this.r-20)/2, options)
+			ellipse(0,0,this.r,this.r);
 			pop()
 	}
 
